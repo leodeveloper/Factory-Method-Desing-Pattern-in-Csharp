@@ -10,6 +10,15 @@ namespace FactoryDesignPattern
     {
         static void Main(string[] args)
         {
+            IPhone iphone;
+
+            iphone = FactoryPhone.GetPhone(EnumPhoneType.PhoneType.ApplePhone);
+            Console.WriteLine(iphone.GetPrice());
+
+            iphone = FactoryPhone.GetPhone(EnumPhoneType.PhoneType.SumSungPhone);
+            Console.WriteLine(iphone.GetPrice());
+
+            Console.ReadLine();
         }
     }
 }
