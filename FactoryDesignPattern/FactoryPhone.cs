@@ -15,6 +15,7 @@ namespace FactoryDesignPattern
             if (phoneType == PhoneType.ApplePhone)
             {
                 iPhone = new ApplePhone();
+            
             }
             else if (phoneType == PhoneType.SumSungPhone)
             {
